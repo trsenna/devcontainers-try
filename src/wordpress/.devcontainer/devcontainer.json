@@ -1,0 +1,14 @@
+{
+	"name": "Try WordPress",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "app",
+	"workspaceFolder": "/homestead/code/${localWorkspaceFolderBasename}",
+	"postCreateCommand": "bash .devcontainer/local-scripts/post-create-command.sh",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {},
+		"./local-features/wordpress": {},
+		"./local-features/custom": {}
+	}
+}
