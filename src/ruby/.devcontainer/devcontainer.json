@@ -1,5 +1,5 @@
 {
-	"name": "Try Node",
+	"name": "Try Ruby",
 	"dockerComposeFile": [
 		"docker-compose.yml"
 	],
