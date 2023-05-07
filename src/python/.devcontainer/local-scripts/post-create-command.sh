@@ -20,7 +20,7 @@ sudo chown -R $CURRENT_USER:$CURRENT_GROUP /homestead/workspaces
 #	Suspendisse sodales ipsum non justo imperdiet cursus.
 # -----------------------------------------------------------------------------------------------
 
-python -version \
+python --version \
     && git --version \
     && node --version
 
