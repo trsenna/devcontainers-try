@@ -4,10 +4,11 @@
 		"docker-compose.yml"
 	],
 	"service": "app",
-	"workspaceFolder": "/home/code/${localWorkspaceFolderBasename}",
+	"workspaceFolder": "/home/node/code/${localWorkspaceFolderBasename}",
 	"postCreateCommand": "bash .devcontainer/local-scripts/post-create-command.sh",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"./local-features/base": {},
 		"./local-features/custom": {}
 	}
