@@ -4,7 +4,7 @@
 		"docker-compose.yml"
 	],
 	"service": "app",
-	"workspaceFolder": "/homestead/code/${localWorkspaceFolderBasename}",
+	"workspaceFolder": "/home/vscode/code/${localWorkspaceFolderBasename}",
 	"postCreateCommand": "bash .devcontainer/local-scripts/post-create-command.sh",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {},
