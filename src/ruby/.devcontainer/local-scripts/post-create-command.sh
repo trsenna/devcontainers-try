@@ -10,10 +10,7 @@ CURRENT_GROUP=$(id -g)
 
 sudo chown $CURRENT_USER:$CURRENT_GROUP /homestead
 sudo chown $CURRENT_USER:$CURRENT_GROUP /homestead/code
-
-# Sed consectetur dictum arcu, sed interdum leo gravida sed
-sudo mkdir -p /homestead/workspaces
-sudo chown -R $CURRENT_USER:$CURRENT_GROUP /homestead/workspaces
+sudo chown $CURRENT_USER:$CURRENT_GROUP /homestead/workspaces
 
 # -----------------------------------------------------------------------------------------------
 #	LOREM IPSUM

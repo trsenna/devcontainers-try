@@ -6,8 +6,8 @@ services:
       context: ..
       dockerfile: .devcontainer/Dockerfile
     volumes:
-      - ../..:/homestead/code:cached
-      - homestead-data:/homestead
+      - ../..:/home/vscode/code:cached
+      - workspaces-data:/home/vscode/workspaces
     command: sleep infinity
     network_mode: service:db
 
@@ -23,4 +23,4 @@ services:
 
 volumes:
   postgres-data:
-  homestead-data:
+  workspaces-data:

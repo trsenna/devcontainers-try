@@ -8,12 +8,9 @@ CURRENT_GROUP=$(id -g)
 #	Suspendisse sodales ipsum non justo imperdiet cursus.
 # -----------------------------------------------------------------------------------------------
 
-sudo chown $CURRENT_USER:$CURRENT_GROUP /homestead
-sudo chown $CURRENT_USER:$CURRENT_GROUP /homestead/code
-
-# Sed consectetur dictum arcu, sed interdum leo gravida sed
-sudo mkdir -p /homestead/workspaces
-sudo chown -R $CURRENT_USER:$CURRENT_GROUP /homestead/workspaces
+sudo chown $CURRENT_USER:$CURRENT_GROUP /home/vscode
+sudo chown $CURRENT_USER:$CURRENT_GROUP /home/vscode/code
+sudo chown $CURRENT_USER:$CURRENT_GROUP /home/vscode/workspaces
 
 # -----------------------------------------------------------------------------------------------
 #	LOREM IPSUM
