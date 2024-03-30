@@ -9,18 +9,6 @@ services:
       - ../..:/home/vscode/code:cached
       - workspaces-data:/home/vscode/workspaces
     command: sleep infinity
-    network_mode: service:db
-
-  db:
-    image: postgres:latest
-    restart: unless-stopped
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-    environment:
-      POSTGRES_DB: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
 
 volumes:
-  postgres-data:
   workspaces-data:

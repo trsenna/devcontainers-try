@@ -8,7 +8,6 @@ CURRENT_GROUP=$(id -g)
 #	Suspendisse sodales ipsum non justo imperdiet cursus.
 # -----------------------------------------------------------------------------------------------
 
-sudo chown $CURRENT_USER:$CURRENT_GROUP /home/vscode
 sudo chown $CURRENT_USER:$CURRENT_GROUP /home/vscode/code
 sudo chown $CURRENT_USER:$CURRENT_GROUP /home/vscode/workspaces
 
@@ -17,8 +16,7 @@ sudo chown $CURRENT_USER:$CURRENT_GROUP /home/vscode/workspaces
 #	Suspendisse sodales ipsum non justo imperdiet cursus.
 # -----------------------------------------------------------------------------------------------
 
-python --version \
-    && git --version \
-    && node --version
-
-echo "Done!"
+git --version \
+    && docker --version \
+    && docker compose version \
+    && python --version

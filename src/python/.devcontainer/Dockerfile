@@ -1,6 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/python:0-3.11
-
-ENV PYTHONUNBUFFERED 1
+FROM mcr.microsoft.com/devcontainers/base:bullseye
 
 RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \

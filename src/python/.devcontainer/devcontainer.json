@@ -5,10 +5,9 @@
 	],
 	"service": "app",
 	"workspaceFolder": "/home/vscode/code/${localWorkspaceFolderBasename}",
-	"postCreateCommand": "bash .devcontainer/local-scripts/post-create-command.sh",
+	"postCreateCommand": "bash .devcontainer/scripts/post-create-command.sh",
 	"features": {
-		"ghcr.io/devcontainers/features/node:1": {},
-		"./local-features/base": {},
-		"./local-features/custom": {}
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/python:1": {}
 	}
 }
