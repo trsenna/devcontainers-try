@@ -8,16 +8,16 @@ CURRENT_GROUP=$(id -g)
 #	Suspendisse sodales ipsum non justo imperdiet cursus.
 # -----------------------------------------------------------------------------------------------
 
-sudo chown $CURRENT_USER:$CURRENT_GROUP /home/node
-sudo chown $CURRENT_USER:$CURRENT_GROUP /home/node/code
-sudo chown $CURRENT_USER:$CURRENT_GROUP /home/node/workspaces
+sudo chown $CURRENT_USER:$CURRENT_GROUP /home/vscode/code
+sudo chown $CURRENT_USER:$CURRENT_GROUP /home/vscode/workspaces
 
 # -----------------------------------------------------------------------------------------------
 #	LOREM IPSUM
 #	Suspendisse sodales ipsum non justo imperdiet cursus.
 # -----------------------------------------------------------------------------------------------
 
-node --version \
-    && git --version
-
-echo "Done!"
+git --version \
+    && docker --version \
+    && docker compose version \
+    && node --version \
+    && yarn --version
